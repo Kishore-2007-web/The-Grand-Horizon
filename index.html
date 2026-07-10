@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Horizon | Premium Hotel & Suites</title>
+    <meta name="description" content="Experience unparalleled luxury and breathtaking views at The Grand Horizon. Book your perfect stay with us today.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="main-header" class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span>The</span> Grand Horizon
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#rooms" class="nav-link">Rooms & Suites</a></li>
+                    <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                </ul>
+                <button class="btn btn-primary nav-book-btn">Book Now</button>
+            </nav>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('assets/images/hero.png');">
+        <div class="container hero-content">
+            <h1 class="fade-in-up">Discover Your Next <br><span>Luxurious Escape</span></h1>
+            <p class="fade-in-up delay-1">Immerse yourself in world-class hospitality, breathtaking views, and uncompromising elegance.</p>
+            
+            <!-- Booking Widget -->
+            <div class="booking-widget fade-in-up delay-2">
+                <form id="booking-form" class="booking-form">
+                    <div class="form-group">
+                        <label for="check-in"><i class="far fa-calendar-alt"></i> Check-in</label>
+                        <input type="date" id="check-in" name="check-in" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out"><i class="far fa-calendar-alt"></i> Check-out</label>
+                        <input type="date" id="check-out" name="check-out" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests"><i class="far fa-user"></i> Guests</label>
+                        <select id="guests" name="guests">
+                            <option value="1">1 Guest</option>
+                            <option value="2" selected>2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Check Availability</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="section amenities">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h4 class="subtitle">Experience Excellence</h4>
+                <h2 class="title">World-Class Amenities</h2>
+            </div>
+            
+            <div class="amenities-grid">
+                <div class="amenity-card reveal delay-1">
+                    <div class="amenity-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Wellness Spa</h3>
+                    <p>Rejuvenate your mind and body with our award-winning spa treatments and massage therapies.</p>
+                </div>
+                <div class="amenity-card reveal delay-2">
+                    <div class="amenity-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>Fine Dining</h3>
+                    <p>Indulge in culinary masterpieces crafted by Michelin-starred chefs in an elegant atmosphere.</p>
+                </div>
+                <div class="amenity-card reveal delay-3">
+                    <div class="amenity-icon"><i class="fas fa-swimming-pool"></i></div>
+                    <h3>Infinity Pool</h3>
+                    <p>Relax in our temperature-controlled infinity pool overlooking breathtaking natural landscapes.</p>
+                </div>
+                <div class="amenity-card reveal delay-4">
+                    <div class="amenity-icon"><i class="fas fa-concierge-bell"></i></div>
+                    <h3>24/7 Concierge</h3>
+                    <p>Our dedicated staff is always available to ensure your every need and desire is promptly met.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="section rooms bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h4 class="subtitle">Luxury Awaits</h4>
+                <h2 class="title">Rooms & Suites</h2>
+            </div>
+
+            <div class="rooms-grid">
+                <!-- Room 1 -->
+                <article class="room-card reveal delay-1">
+                    <div class="room-img" style="background-image: url('assets/images/deluxe_suite.png');">
+                        <div class="room-price">From $450/night</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Grand Deluxe Suite</h3>
+                        <p>Spacious, modern coastal suite featuring a king-size bed, subtle gold accents, and an expansive living area.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> King Bed</li>
+                            <li><i class="fas fa-bath"></i> Deep Soaking Tub</li>
+                            <li><i class="fas fa-wifi"></i> Fast Wi-Fi</li>
+                            <li><i class="fas fa-tv"></i> 65" OLED TV</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline btn-block">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Room 2 -->
+                <article class="room-card reveal delay-2">
+                    <div class="room-img" style="background-image: url('assets/images/ocean_view.png');">
+                        <div class="room-price">From $350/night</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Ocean View Room</h3>
+                        <p>Wake up to the sound of waves with stunning floor-to-ceiling panoramic views of the crystal-clear ocean.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Queen/King Bed</li>
+                            <li><i class="fas fa-water"></i> Ocean View</li>
+                            <li><i class="fas fa-wind"></i> Balcony</li>
+                            <li><i class="fas fa-coffee"></i> Espresso Machine</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline btn-block">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Room 3 -->
+                <article class="room-card reveal delay-3">
+                    <div class="room-img" style="background-image: url('assets/images/standard_room.png');">
+                        <div class="room-price">From $250/night</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Classic Standard Room</h3>
+                        <p>Elegant, comfortable, and beautifully appointed with warm neutral colors and sophisticated lighting.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Queen Bed</li>
+                            <li><i class="fas fa-briefcase"></i> Work Desk</li>
+                            <li><i class="fas fa-shower"></i> Rain Shower</li>
+                            <li><i class="fas fa-concierge-bell"></i> Room Service</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline btn-block">View Details</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section reviews">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h4 class="subtitle">Guest Experiences</h4>
+                <h2 class="title">What Our Guests Say</h2>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card reveal delay-1">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"An absolute dream! The Deluxe Suite was beyond anything we imagined. The attention to detail and staff hospitality made our anniversary unforgettable."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">EH</div>
+                        <div class="reviewer-info">
+                            <h4>Eleanor Harding</h4>
+                            <span>New York, USA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card reveal delay-2">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Waking up to the ocean view every morning was magical. The infinity pool and the fine dining experience are truly world-class."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">JM</div>
+                        <div class="reviewer-info">
+                            <h4>James Miller</h4>
+                            <span>London, UK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span>The</span> Grand Horizon
+                    </a>
+                    <p>Experience the pinnacle of luxury and comfort in our meticulously designed haven of tranquility.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Our Rooms</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#reviews">Guest Reviews</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Paradise Island</li>
+                        <li><i class="fas fa-phone-alt"></i> +1 (800) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> reservations@grandhorizon.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive exclusive offers and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Grand Horizon. All rights reserved. Designed for excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
