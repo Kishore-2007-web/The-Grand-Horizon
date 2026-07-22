@@ -1,0 +1,68 @@
+/* ----------------------------------------------------
+   Modern Reset & Base Normalize
+---------------------------------------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--clr-dark);
+    letter-spacing: -0.01em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img, picture, svg, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+/* Accessibility Focus Outline Standard */
+:focus-visible {
+    outline: 3px solid var(--clr-primary);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

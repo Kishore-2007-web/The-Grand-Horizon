@@ -1,0 +1,9 @@
+/* ----------------------------------------------------
+   The Grand Horizon - Master Stylesheet
+   Importing Modular CSS Architecture
+---------------------------------------------------- */
+
+@import url('variables.css');
+@import url('reset.css');
+@import url('layout.css');
+@import url('components.css');

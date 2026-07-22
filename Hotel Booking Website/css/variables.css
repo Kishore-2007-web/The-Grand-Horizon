@@ -1,0 +1,58 @@
+/* ----------------------------------------------------
+   CSS Variables & Design Tokens
+   The Grand Horizon Template System
+---------------------------------------------------- */
+:root {
+    /* Color Palette - Gold & Dark Elegance */
+    --clr-primary: #C39D63;
+    --clr-primary-hover: #A88653;
+    --clr-primary-light: rgba(195, 157, 99, 0.12);
+    --clr-dark: #1A1A1A;
+    --clr-dark-light: #2A2A2A;
+    --clr-light: #FBF9F6;
+    --clr-white: #FFFFFF;
+    --clr-gray-dark: #4A4A4A;
+    --clr-gray: #757575;
+    --clr-gray-light: #E8E8E8;
+    --clr-gray-extra-light: #F4F4F4;
+
+    /* Status Colors */
+    --clr-success: #2E7D32;
+    --clr-success-bg: #E8F5E9;
+    --clr-warning: #ED6C02;
+    --clr-warning-bg: #FFF3E0;
+    --clr-error: #D32F2F;
+    --clr-error-bg: #FFEBEE;
+
+    /* Typography */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    
+    /* Spacing System */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 80px;
+
+    /* Layout */
+    --max-width: 1200px;
+    --nav-height: 80px;
+    --border-radius: 4px;
+    --border-radius-lg: 8px;
+
+    /* Elevation & Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+    --shadow-modal: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+    /* Transitions & FX */
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --glass-bg: rgba(26, 26, 26, 0.85);
+    --glass-blur: blur(12px);
+}

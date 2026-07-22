@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Horizon — Template Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --clr-primary: #C39D63;
+            --clr-dark: #1A1A1A;
+            --clr-light: #FBF9F6;
+            --clr-sidebar: #111111;
+            --clr-text: #333333;
+            --clr-border: #E5E5E5;
+            --font-body: 'Inter', sans-serif;
+            --font-heading: 'Playfair Display', serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); color: var(--clr-text); background: var(--clr-light); display: flex; min-height: 100vh; line-height: 1.6; }
+
+        /* Sidebar Navigation */
+        .sidebar { width: 280px; background: var(--clr-sidebar); color: #fff; padding: 30px 20px; position: fixed; height: 100vh; overflow-y: auto; }
+        .sidebar-brand { font-family: var(--font-heading); font-size: 1.4rem; color: #fff; margin-bottom: 30px; display: block; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; }
+        .sidebar-brand span { color: var(--clr-primary); font-style: italic; }
+        .sidebar-menu { list-style: none; }
+        .sidebar-menu li { margin-bottom: 8px; }
+        .sidebar-menu a { color: #aaa; text-decoration: none; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 4px; transition: all 0.2s ease; }
+        .sidebar-menu a:hover, .sidebar-menu a.active { background: rgba(195, 157, 99, 0.15); color: var(--clr-primary); }
+
+        /* Content Area */
+        .content { margin-left: 280px; flex: 1; padding: 50px 60px; max-width: 1000px; }
+        .doc-header { margin-bottom: 40px; border-bottom: 2px solid var(--clr-border); padding-bottom: 20px; }
+        .doc-header h1 { font-family: var(--font-heading); font-size: 2.5rem; color: var(--clr-dark); margin-bottom: 10px; }
+        .doc-header p { color: #666; font-size: 1.1rem; }
+
+        .doc-section { margin-bottom: 50px; scroll-margin-top: 40px; }
+        .doc-section h2 { font-family: var(--font-heading); font-size: 1.8rem; color: var(--clr-dark); margin-bottom: 15px; padding-bottom: 8px; border-bottom: 1px solid var(--clr-border); }
+        .doc-section h3 { font-size: 1.25rem; color: var(--clr-dark); margin: 20px 0 10px; }
+        .doc-section p { margin-bottom: 15px; color: #555; }
+
+        .code-box { background: var(--clr-dark); color: #81A1C1; padding: 20px; border-radius: 6px; font-family: monospace; font-size: 0.9rem; overflow-x: auto; margin: 15px 0; border-left: 4px solid var(--clr-primary); }
+        .code-box code { color: #D8DEE9; }
+        .code-box .keyword { color: #88C0D0; }
+        .code-box .string { color: #A3BE8C; }
+        .code-box .comment { color: #616E88; font-style: italic; }
+
+        .info-card { background: #FFF8EE; border: 1px solid rgba(195, 157, 99, 0.4); padding: 20px; border-radius: 6px; margin: 20px 0; }
+        .info-card h4 { color: var(--clr-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: relative; }
+            .content { margin-left: 0; padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <a href="../index.html" class="sidebar-brand">
+            <span>The</span> Grand Horizon
+        </a>
+        <ul class="sidebar-menu">
+            <li><a href="#overview" class="active"><i class="fas fa-book"></i> Overview</a></li>
+            <li><a href="#structure"><i class="fas fa-folder-tree"></i> File Structure</a></li>
+            <li><a href="#colors"><i class="fas fa-palette"></i> Colors & Typography</a></li>
+            <li><a href="#data"><i class="fas fa-database"></i> Room Data & Config</a></li>
+            <li><a href="#booking"><i class="fas fa-calendar-check"></i> Booking Widget</a></li>
+            <li><a href="#deployment"><i class="fas fa-rocket"></i> Deployment</a></li>
+            <li><a href="#faq"><i class="fas fa-circle-question"></i> FAQ & Support</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <header class="doc-header">
+            <h1>Documentation Manual</h1>
+            <p>The Grand Horizon — Premium Hotel & Luxury Suites HTML5 Template v1.0.0</p>
+        </header>
+
+        <!-- Overview -->
+        <section id="overview" class="doc-section">
+            <h2>1. Overview</h2>
+            <p>Thank you for purchasing <strong>The Grand Horizon</strong> template. This documentation covers all instructions needed to customize, edit, and deploy the template for your luxury hotel or resort project.</p>
+            <div class="info-card">
+                <h4><i class="fas fa-lightbulb"></i> Quick Tip</h4>
+                <p>All primary colors, typography sizes, and border radiuses are managed inside <code>css/variables.css</code>. No complex build tools or compilers are required.</p>
+            </div>
+        </section>
+
+        <!-- File Structure -->
+        <section id="structure" class="doc-section">
+            <h2>2. File Structure</h2>
+            <p>The template is organized cleanly into modular folders for CSS, JS, and Assets:</p>
+            <div class="code-box">
+<code>The Grand Horizon/
+├── index.html                  <span class="comment"># Main landing page</span>
+├── css/
+│   ├── variables.css           <span class="comment"># Design tokens & CSS variables</span>
+│   ├── reset.css               <span class="comment"># Modern CSS normalization</span>
+│   ├── layout.css              <span class="comment"># Structural grids & section containers</span>
+│   ├── components.css          <span class="comment"># UI components, modals, buttons, toasts</span>
+│   └── styles.css              <span class="comment"># Master CSS importer</span>
+├── js/
+│   ├── data.js                 <span class="comment"># Room specs & FAQ dataset</span>
+│   ├── booking.js              <span class="comment"># Availability form & toasts</span>
+│   ├── gallery-modal.js        <span class="comment"># Room category filter & modal popup</span>
+│   └── main.js                 <span class="comment"># Scroll reveals & accordions</span>
+└── Documentation/
+    └── index.html              <span class="comment"># Offline manual guide</span></code>
+            </div>
+        </section>
+
+        <!-- Colors & Typography -->
+        <section id="colors" class="doc-section">
+            <h2>3. Colors & Typography</h2>
+            <p>To modify the visual identity of the hotel website, open <code>css/variables.css</code> and update the root CSS variables:</p>
+            <div class="code-box">
+<code>:root {
+    <span class="comment">/* Primary Accent Color (Subtle Gold) */</span>
+    <span class="keyword">--clr-primary</span>: <span class="string">#C39D63</span>;
+    <span class="keyword">--clr-primary-hover</span>: <span class="string">#A88653</span>;
+    
+    <span class="comment">/* Dark Background Theme */</span>
+    <span class="keyword">--clr-dark</span>: <span class="string">#1A1A1A</span>;
+    <span class="keyword">--clr-light</span>: <span class="string">#FBF9F6</span>;
+}</code>
+            </div>
+        </section>
+
+        <!-- Room Data -->
+        <section id="data" class="doc-section">
+            <h2>4. Room Data & Configuration</h2>
+            <p>Room cards and interactive detail modals pull data directly from <code>js/data.js</code>. You can easily add or edit rooms by editing the JSON structure:</p>
+            <div class="code-box">
+<code>const GRAND_HORIZON_DATA = {
+    rooms: [
+        {
+            id: <span class="string">"grand-deluxe-suite"</span>,
+            title: <span class="string">"Grand Deluxe Suite"</span>,
+            category: <span class="string">"suites"</span>,
+            price: 450,
+            image: <span class="string">"assets/images/deluxe_suite.png"</span>,
+            shortDesc: <span class="string">"Spacious coastal suite with king-size bed..."</span>
+        }
+    ]
+};</code>
+            </div>
+        </section>
+
+        <!-- Booking Widget -->
+        <section id="booking" class="doc-section">
+            <h2>5. Booking Availability Widget</h2>
+            <p>The booking widget enforces valid check-in and check-out dates automatically using JavaScript in <code>js/booking.js</code>. Minimum check-out date is constrained to at least 1 day after check-in.</p>
+        </section>
+
+        <!-- Deployment -->
+        <section id="deployment" class="doc-section">
+            <h2>6. Deployment</h2>
+            <p>To publish your customized website template live on web hosting (cPanel, Vercel, Netlify, or Apache/Nginx):</p>
+            <ol style="margin-left: 20px; color: #555;">
+                <li>Upload all files from the root directory to your web server <code>public_html</code> folder.</li>
+                <li>Ensure <code>robots.txt</code> and <code>sitemap.xml</code> are updated with your domain URL.</li>
+                <li>Test room filtering, booking widget, and responsive layout across mobile devices.</li>
+            </ol>
+        </section>
+
+        <!-- FAQ & Support -->
+        <section id="faq" class="doc-section">
+            <h2>7. FAQ & Support</h2>
+            <p>Need additional assistance or technical support? Please open a support ticket or contact our team via the marketplace item support tab.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>

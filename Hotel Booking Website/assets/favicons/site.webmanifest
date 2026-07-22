@@ -1,0 +1,16 @@
+{
+  "name": "The Grand Horizon | Premium Hotel & Suites",
+  "short_name": "Grand Horizon",
+  "description": "Luxury hotel and suites booking template",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#1A1A1A",
+  "theme_color": "#C39D63",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

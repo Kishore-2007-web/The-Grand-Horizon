@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Horizon | Premium Hotel & Luxury Suites Template</title>
+    <meta name="description" content="Experience unparalleled luxury and breathtaking ocean views at The Grand Horizon. Book your luxury suite stay with world-class amenities today.">
+    <meta name="keywords" content="hotel template, luxury resort, booking website, hotel suite, hospitality template, resort website">
+    <meta name="author" content="The Grand Horizon">
+    <meta name="theme-color" content="#1A1A1A">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="The Grand Horizon | Premium Hotel & Luxury Suites">
+    <meta property="og:description" content="Experience unparalleled luxury and breathtaking ocean views at The Grand Horizon. Book your stay today.">
+    <meta property="og:image" content="https://yourdomain.com/assets/images/hero.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="The Grand Horizon | Premium Hotel & Luxury Suites">
+    <meta property="twitter:description" content="Experience unparalleled luxury and breathtaking ocean views at The Grand Horizon. Book your stay today.">
+    <meta property="twitter:image" content="https://yourdomain.com/assets/images/hero.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JSON-LD Structured Data for Hotel / LodgingBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "The Grand Horizon",
+      "description": "Experience unparalleled luxury and breathtaking views at The Grand Horizon.",
+      "image": "https://yourdomain.com/assets/images/hero.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Luxury Lane",
+        "addressLocality": "Paradise Island",
+        "addressCountry": "US"
+      },
+      "telephone": "+18001234567",
+      "priceRange": "$$$$",
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Header -->
+    <header id="main-header" class="header">
+        <div class="container header-container">
+            <a href="#home" class="logo" aria-label="The Grand Horizon Home">
+                <span>The</span> Grand Horizon
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                    <li><a href="#rooms" class="nav-link">Rooms & Suites</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+                <a href="#booking-widget" class="btn btn-primary btn-sm nav-book-btn">Book Now</a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Body -->
+    <main id="main-content">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url('assets/images/hero.png');">
+            <div class="container hero-content">
+                <h1 class="fade-in-up">Discover Your Next <br><span>Luxurious Escape</span></h1>
+                <p class="fade-in-up delay-1">Immerse yourself in world-class hospitality, breathtaking views, and uncompromising elegance designed for the discerning traveler.</p>
+                
+                <!-- Booking Widget Form -->
+                <div id="booking-widget" class="booking-widget fade-in-up delay-2">
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-group">
+                            <label for="check-in"><i class="far fa-calendar-alt" aria-hidden="true"></i> Check-in</label>
+                            <input type="date" id="check-in" name="check-in" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="check-out"><i class="far fa-calendar-alt" aria-hidden="true"></i> Check-out</label>
+                            <input type="date" id="check-out" name="check-out" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests"><i class="far fa-user" aria-hidden="true"></i> Guests</label>
+                            <select id="guests" name="guests">
+                                <option value="1">1 Guest</option>
+                                <option value="2" selected>2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-search" aria-hidden="true"></i> Check Availability
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities Section -->
+        <section id="amenities" class="section amenities">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <h2 class="subtitle">Experience Excellence</h2>
+                    <h3 class="title">World-Class Amenities</h3>
+                </div>
+                
+                <div class="amenities-grid">
+                    <article class="amenity-card reveal delay-1">
+                        <div class="amenity-icon"><i class="fas fa-spa" aria-hidden="true"></i></div>
+                        <h3>Wellness Spa</h3>
+                        <p>Rejuvenate your mind and body with our award-winning spa treatments and holistic massage therapies.</p>
+                    </article>
+
+                    <article class="amenity-card reveal delay-2">
+                        <div class="amenity-icon"><i class="fas fa-utensils" aria-hidden="true"></i></div>
+                        <h3>Fine Dining</h3>
+                        <p>Indulge in culinary masterpieces crafted by Michelin-starred chefs in an ambiance of pure refinement.</p>
+                    </article>
+
+                    <article class="amenity-card reveal delay-3">
+                        <div class="amenity-icon"><i class="fas fa-swimming-pool" aria-hidden="true"></i></div>
+                        <h3>Infinity Pool</h3>
+                        <p>Relax in our heated infinity edge pool offering uninterrupted panoramic views of nature's majesty.</p>
+                    </article>
+
+                    <article class="amenity-card reveal delay-4">
+                        <div class="amenity-icon"><i class="fas fa-concierge-bell" aria-hidden="true"></i></div>
+                        <h3>24/7 Concierge</h3>
+                        <p>Our dedicated personal butler staff ensures your every request is fulfilled with seamless perfection.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rooms & Suites Section -->
+        <section id="rooms" class="section rooms bg-light">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <h2 class="subtitle">Luxury Awaits</h2>
+                    <h3 class="title">Rooms & Accommodations</h3>
+                </div>
+
+                <!-- Interactive Category Filter Buttons -->
+                <div class="room-filter-nav reveal">
+                    <button class="filter-btn active" data-filter="all">All Rooms</button>
+                    <button class="filter-btn" data-filter="suites">Luxury Suites</button>
+                    <button class="filter-btn" data-filter="ocean">Ocean Views</button>
+                    <button class="filter-btn" data-filter="standard">Classic Rooms</button>
+                </div>
+
+                <div class="rooms-grid">
+                    <!-- Room Card 1 -->
+                    <article class="room-card reveal delay-1" data-category="suites">
+                        <div class="room-img-wrapper">
+                            <div class="room-img" style="background-image: url('assets/images/deluxe_suite.png');" role="img" aria-label="Grand Deluxe Suite interior with plush king bed and gold accents"></div>
+                            <div class="room-price">From $450/night</div>
+                        </div>
+                        <div class="room-content">
+                            <h3>Grand Deluxe Suite</h3>
+                            <p>Spacious, modern coastal suite featuring a king-size bed, subtle gold accents, and an expansive living area.</p>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed" aria-hidden="true"></i> King Bed</li>
+                                <li><i class="fas fa-bath" aria-hidden="true"></i> Soaking Tub</li>
+                                <li><i class="fas fa-wifi" aria-hidden="true"></i> Fast Wi-Fi</li>
+                                <li><i class="fas fa-tv" aria-hidden="true"></i> 65" OLED TV</li>
+                            </ul>
+                            <button class="btn btn-outline btn-block btn-view-details" data-room-id="grand-deluxe-suite">
+                                View Details <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Room Card 2 -->
+                    <article class="room-card reveal delay-2" data-category="ocean">
+                        <div class="room-img-wrapper">
+                            <div class="room-img" style="background-image: url('assets/images/ocean_view.png');" role="img" aria-label="Ocean View Room with floor-to-ceiling windows overlooking crystal ocean"></div>
+                            <div class="room-price">From $350/night</div>
+                        </div>
+                        <div class="room-content">
+                            <h3>Ocean View Room</h3>
+                            <p>Wake up to the sound of ocean waves with stunning floor-to-ceiling panoramic views of the ocean.</p>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed" aria-hidden="true"></i> King Bed</li>
+                                <li><i class="fas fa-water" aria-hidden="true"></i> Ocean View</li>
+                                <li><i class="fas fa-wind" aria-hidden="true"></i> Balcony</li>
+                                <li><i class="fas fa-coffee" aria-hidden="true"></i> Espresso Bar</li>
+                            </ul>
+                            <button class="btn btn-outline btn-block btn-view-details" data-room-id="ocean-view-room">
+                                View Details <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Room Card 3 -->
+                    <article class="room-card reveal delay-3" data-category="standard">
+                        <div class="room-img-wrapper">
+                            <div class="room-img" style="background-image: url('assets/images/standard_room.png');" role="img" aria-label="Classic Standard Room with warm lighting and comfortable desk"></div>
+                            <div class="room-price">From $250/night</div>
+                        </div>
+                        <div class="room-content">
+                            <h3>Classic Standard Room</h3>
+                            <p>Elegant, comfortable, and beautifully appointed with warm neutral tones and sophisticated lighting.</p>
+                            <ul class="room-features">
+                                <li><i class="fas fa-bed" aria-hidden="true"></i> Queen Bed</li>
+                                <li><i class="fas fa-briefcase" aria-hidden="true"></i> Work Desk</li>
+                                <li><i class="fas fa-shower" aria-hidden="true"></i> Rain Shower</li>
+                                <li><i class="fas fa-concierge-bell" aria-hidden="true"></i> Room Service</li>
+                            </ul>
+                            <button class="btn btn-outline btn-block btn-view-details" data-room-id="classic-standard-room">
+                                View Details <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="section reviews">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <h2 class="subtitle">Guest Experiences</h2>
+                    <h3 class="title">What Our Guests Say</h3>
+                </div>
+                
+                <div class="reviews-grid">
+                    <article class="review-card reveal delay-1">
+                        <div class="review-stars" aria-label="5 out of 5 stars rating">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote class="review-text">
+                            "An absolute dream! The Grand Deluxe Suite was beyond anything we imagined. The staff hospitality made our anniversary unforgettable."
+                        </blockquote>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar" aria-hidden="true">EH</div>
+                            <div class="reviewer-info">
+                                <h4>Eleanor Harding</h4>
+                                <span>New York, USA</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card reveal delay-2">
+                        <div class="review-stars" aria-label="5 out of 5 stars rating">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <blockquote class="review-text">
+                            "Waking up to the ocean view every morning was magical. The infinity pool and the fine dining experience are truly world-class."
+                        </blockquote>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar" aria-hidden="true">JM</div>
+                            <div class="reviewer-info">
+                                <h4>James Miller</h4>
+                                <span>London, UK</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section faq bg-light">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <h2 class="subtitle">Got Questions?</h2>
+                    <h3 class="title">Frequently Asked Questions</h3>
+                </div>
+
+                <div class="faq-grid reveal">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What are the check-in and check-out times?</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Standard check-in time is 3:00 PM and check-out time is 11:00 AM. Early check-in or late check-out can be requested based on availability.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Is breakfast included with room bookings?</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Complimentary gourmet breakfast buffet is included with all Suite bookings. Guests booking standard rooms can add breakfast during reservation or upon arrival.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What is your cancellation policy?</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We offer full refunds for cancellations made up to 48 hours prior to scheduled check-in date. Rates may vary during holiday peak seasons.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do you offer airport transfer services?</span>
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, private luxury chauffeur transfers can be arranged through our 24/7 Concierge team at least 24 hours in advance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span>The</span> Grand Horizon
+                    </a>
+                    <p>Experience the pinnacle of luxury and comfort in our meticulously designed haven of oceanfront tranquility.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#rooms">Rooms & Suites</a></li>
+                        <li><a href="#reviews">Guest Reviews</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Luxury Lane, Paradise Island</li>
+                        <li><i class="fas fa-phone-alt" aria-hidden="true"></i> +1 (800) 123-4567</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> reservations@grandhorizon.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive exclusive seasonal offers and VIP updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" aria-label="Email for newsletter subscription" required>
+                        <button type="submit" class="btn btn-primary" aria-label="Subscribe to newsletter"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Grand Horizon. All rights reserved. Designed for commercial excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Room Details Modal -->
+    <div id="room-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-room-title">
+        <div class="modal">
+            <button id="modal-close-btn" class="modal-close" aria-label="Close modal dialog">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <h3 id="modal-room-title" class="modal-title">Room Title</h3>
+            <div id="modal-room-price" class="modal-price">Price</div>
+            <div class="modal-body">
+                <p id="modal-room-desc">Room description details will appear here.</p>
+                <h4 style="margin-bottom: 12px; font-size: 1.1rem;">Included Amenities</h4>
+                <ul id="modal-room-features" class="modal-amenities-list">
+                    <!-- Dynamic List -->
+                </ul>
+                <a href="#booking-widget" onclick="document.getElementById('room-modal').click();" class="btn btn-primary btn-block">Reserve This Room</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modular JS Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/gallery-modal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
